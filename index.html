@@ -10,7 +10,6 @@
     <title>Larme Group</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
 
     <!-- Mobile Metas -->
@@ -18,16 +17,16 @@
 
     <!-- Web Fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/theme-elements.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
 
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/vendor/fontawesome-free/css/all.min.css">
 
 
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.css">
-    <link rel="stylesheet" href="./assets/css/theme-elements.css">
-    <link rel="stylesheet" href="./assets/css/custom.css">
 
 
     <!-- Current Page CSS -->
@@ -53,7 +52,7 @@
             <div class="row align-items-center">
               <div class="col-9">
                 <div class="py-4">
-                  <a href="index.html">
+                  <a href="#">
                     <h1>LARME GROUP</h1>
                   </a>
                 </div>
@@ -84,7 +83,7 @@
                   </span>
                 </button>
                 <div class="header-logo">
-                  <a href="i.html">
+                  <a href="#" class="nav-letter">
                     <h1 style="text-align:center;font-size: 60px;">LARME</h1>
                     <h1 style="text-align:center;font-size: 60px;">GROUP</h1>
                   </a>
@@ -96,55 +95,54 @@
                     <nav class="collapse">
                       <ul class="nav nav-pills" id="mainNav">
                         <li >
-                          <a class="" href="#home">
-                            {{trans('file.nvhome')}}
+                          <a class="" href="#about">
+                            HOME
                           </a>
                         </li>
                         <li >
                           <a class="" href="#about">
-                            {{trans('file.nvabout')}}
+                            ABOUT US
                           </a>
-
                         </li>
                         <li class="dropdown">
                           <a class="dropdown-item dropdown-toggle" href="#">
-                            {{trans('file.nvportfolio')}}
+                            PORTFOLIO
                           </a>
                           <ul class="dropdown-menu">
                             <li class="back-button d-none d-lg-block">
                               <a class="dropdown-item">
-                                {{trans('file.nvback')}}
+                                Back
                               </a>
                             </li>
                             <li class="">
-                              <a class="" >{{trans('file.nvfurniture')}}</a>
+                              <a class="" >Furniture</a>
                             </li>
                             <li class="">
-                              <a class="" >{{trans('file.nvhomeapp')}}</a>
+                              <a class="" >Home Appliances</a>
                             </li>
                             <li class="">
-                              <a class="" >{{trans('file.nvclothing')}}</a>
+                              <a class="" >Clothing</a>
                             </li>
                             <li class="">
-                              <a class="" >{{trans('file.nvfashionacc')}}</a>
+                              <a class="" >Fashion Accesories</a>
                             </li>
                             <li class="">
-                              <a class="" >{{trans('file.nvbags')}}</a>
+                              <a class="" >Bags</a>
                             </li>
                             <li class="">
-                              <a class="" >{{trans('file.nvgadgets')}}</a>
+                              <a class="" >Gadgets & Technology</a>
                             </li>
                             <li class="">
-                              <a class="" >{{trans('file.nvcars')}}</a>
+                              <a class="" >Cars</a>
                             </li>
                             <li class="">
-                              <a class="" >{{trans('file.nvcons')}}</a>
+                              <a class="" >Construction</a>
                             </li>
                           </ul>
                         </li>
                         <li >
                           <a class="" href="#contact">
-                            {{trans('file.nvcontact')}}
+                            CONTACT
                           </a>
                         </li>
                       </ul>
@@ -163,11 +161,6 @@
                 </ul>
               </div>
               <div class="header-row justify-content-end pb-lg-3">
-                <!--<ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean d-sm-0">
-                  <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                  <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                  <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-                </ul>-->
                 <p class="d-none d-lg-block text-1 pt-3">© 2019 LARME GROUP. All rights reserved</p>
                 <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
                   <i class="fas fa-bars"></i>
@@ -181,7 +174,7 @@
       <!--Main Content-->
       <div role="main" class="main position-relative z-index-2 z-index-mobile-0">
         <div class="m-0 p-0">
-          <a id="home"><a/>
+          <a id="lar_index"><a/>
           <div class="row">
             <div class="col-sm-6 col-lg-4 p-0 m-0">
               <div class="portfolio-item m-0 p-0">
@@ -190,7 +183,7 @@
                       <img src="./assets/img/index2.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
                         <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">LARME GROUP</span>
-                        <span class="thumb-info-type opacity-6">{{trans('file.nvvalue')}}</span>
+                        <span class="thumb-info-type opacity-6">VALUE WITHOUT SACRIFICING QUALITY</span>
                       </span>
                     </span>
                   </span>
@@ -202,8 +195,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/furniture.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvindfur')}}</span>
-                        <span class="thumb-info-type opacity-6">{{trans('file.nvhomeint')}}</span>
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">FASHION ACCESORIES</span>
+                        <span class="thumb-info-type opacity-6">BE YOURSELF</span>
                         <span class="thumb-info-show-more-content pr-3">
                         </span>
                       </span>
@@ -217,8 +210,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/homeAp.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvhomeapl')}}</span>
-                        <span class="thumb-info-type opacity-6">{{trans('file.nvimprove')}}</span>
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">BAGS</span>
+                        <span class="thumb-info-type opacity-6">WITH YOU TO EVERYWHERE</span>
                       </span>
                     </span>
                   </span>
@@ -230,8 +223,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/clothing2.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvcloth')}}</span>
-                        <span class="thumb-info-type opacity-6">{{trans('file.nvfashfo')}}</span>
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">CLOTHING</span>
+                        <span class="thumb-info-type opacity-6">FASHION FOR EVERYONE</span>
                       </span>
                     </span>
                   </span>
@@ -243,8 +236,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/fashionA1.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvfashacc')}}</span>
-                        <span class="thumb-info-type opacity-6">{{trans('file.nvbeyou')}}</span>
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">FASHION ACCESORIES</span>
+                        <span class="thumb-info-type opacity-6">BE YOURSELF</span>
                       </span>
                     </span>
                   </span>
@@ -256,8 +249,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/bags1.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvbgs')}}</span>
-                        <span class="thumb-info-type opacity-6">{{trans('file.nvwituev')}}</span>
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">BAGS</span>
+                        <span class="thumb-info-type opacity-6">WITH YOU TO EVERYWHERE</span>
                       </span>
                     </span>
                   </span>
@@ -269,8 +262,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/gadgets.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvgadtech')}}</span>
-                        <span class="thumb-info-type opacity-6">{{trans('file.nvpartof')}}</span>
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">GADGETS & TECHNOLOGY</span>
+                        <span class="thumb-info-type opacity-6">PART OF YOU</span>
                       </span>
                     </span>
                   </span>
@@ -283,8 +276,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/spareparts1.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvcarx')}}</span>
-                        <span class="thumb-info-type opacity-6">{{trans('file.nvspare')}}</span>
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">CARS</span>
+                        <span class="thumb-info-type opacity-6">SPARE PARTS & ACCESORIES</span>
                       </span>
                     </span>
                   </span>
@@ -296,8 +289,9 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/building1.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvcontr')}}</span>
-                        <span class="thumb-info-type opacity-6">{{trans('file.nvbuildmat')}}</span>
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">CONSTRUCTION</span>
+                        <span class="thumb-info-type opacity-6">BUILDING MATERIALS
+</span>
                       </span>
                     </span>
                   </span>
@@ -306,7 +300,7 @@
           </div>
         </div>
       </div>
-      <section class="about">
+      <section id="about" class="about">
        <div class="about-paragraph">
         <div class="about-items">
          <font class="about-head">EXCELLENCE, GOODWILL & PERFORMANCE</font>
@@ -358,7 +352,7 @@
           </div>
           <div class="products">
             <div class="btn-products">
-              <a class="btn-form" href="#">product portfolio</a>
+              <a class="btn-form" href="#lar_index">product portfolio</a>
             </div>
             <div class="inside-products">
               <h2>OUR PRODUCTS</h2>
@@ -379,70 +373,36 @@
       <!--Section for apparel & distribution-->
 
       <!--Section for Join US-->
-      <section class="call-to-actionEdit call-to-action-primary m-0">
-        <div class="container">
-          <a id="contact"><a/>
-          <h2 class="wsite-content-title" style="text-align:center;"><strong><font size="6">{{trans('file.nvjoin1')}}</font></strong></h2>
-
-          <div class="paragraph" style="text-align:center;">{{trans('file.nvjoin2')}}&nbsp;</div>
-
-          <div>
-            <div class="wsite-multicol">
-              <div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-                <div class="">
-                  <br></br>
-                </div>
-                 <table class="wsite-multicol-table">
-                     <tbody class="wsite-multicol-tbody">
-                          <tr class="wsite-multicol-tr">
-                                <td class="wsite-multicol-col" style="width:35.609509357613%; padding:0 15px;">
-                                  <div style="text-align:center;">
-                                    <div style="height: 10px; overflow: hidden;"></div>
-                                      <a class="btnEdit btn-primaryEdit btn-rounded px-5 py-3 font-weight-semibold text-color-light mt-3 mb-5" href="mailto:hello@larmegroup.com" >
-                                        <span class="wsite-button-inner">{{trans('file.nvjoin3')}}</span>
-                                      </a>
-                                      <div style="height: 0px; overflow: hidden;"></div>
-                                    </div>
-                                    <br></br>
-                                  <div class="paragraph" style="text-align:center;">{{trans('file.nvjoin4')}}</div>
-                                 </td>
-                                 <td class="wsite-multicol-col" style="width:30.271630034707%; padding:0 15px;">
-                                   <div style="text-align:center;"><div style="height: 10px; overflow: hidden;"></div>
-                                    <a class="btnEdit btn-primaryEdit btn-rounded px-5 py-3 font-weight-semibold text-color-light mt-3 mb-5" href="mailto:hello@larmegroup.com" >
-                                      <span class="wsite-button-inner">{{trans('file.nvjoin5')}}</span>
-                                    </a>
-                                    <div style="height: 0px; overflow: hidden;"></div>
-                                  </div>
-                                  <br></br>
-                                  <div class="paragraph" style="text-align:center;"><span style="line-height: 0; display: none;">&#65279;</span>{{trans('file.nvjoin6')}}<span style="line-height: 0; display: none;">&#65279;</span></div>
-                                 </td>
-                                <td class="wsite-multicol-col" style="width:34.11886060768%; padding:0 15px;">
-                                  <div style="text-align:center;"><div style="height: 10px; overflow: hidden;"></div>
-                                    <a class="btnEdit btn-primaryEdit btn-rounded px-5 py-3 font-weight-semibold text-color-light mt-3 mb-5" href="mailto:hello@larmegroup.com" >
-                                      <span class="wsite-button-inner">{{trans('file.nvjoin7')}}</span>
-                                    </a>
-                                    <div style="height: 0px; overflow: hidden;"></div>
-                                  </div>
-                                  <br></br>
-                                  <div class="paragraph" style="text-align:center;">{{trans('file.nvjoin8')}}</div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                      </div>
-                  </div>
+      <section class="join">
+        <div class="join-container">
+          <div class="join-up">
+            <div class="join-header">
+              <h2>JOIN OUR GLOBAL NETWORK</h2>
+              <p>CLICK THE CERTAIN BOX BELOW TO TELL US WHO YOU ARE </p>
             </div>
-            <div>
-              <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:15px;margin-left:0;margin-right:0;text-align:center">
-                  <img src="./assets/img/join.png" alt="join" style="width:100%;max-width:1100px" />
-              <div style="display:block;font-size:90%"></div>
+            <div class="join-btns-cards margin-top-mid">
+              <figure class="join-card">
+                <a class="btn-form" href="mailto:hello@larmegroup.com">Designer</a>
+                <p class="margin-top-mid">To be our designers to create great value for our worldwide clients</p>
+              </figure>
+              <figure class="join-card">
+                <a class="btn-form" href="mailto:hello@larmegroup.com">Supplier</a>
+                <p class="margin-top-mid">To be our qualified suppliers to provide excellent "weapon"</p>
+              </figure>
+              <figure class="join-card" style="margin-right: 28px;">
+                <a class="btn-form" href="mailto:hello@larmegroup.com">Distributor</a>
+                <p class="margin-top-mid">To be our distributors to co-build our brand globally</p>
+              </figure>
             </div>
+          </div>
+          <div class="join-down margin-top-mid">
+            <img src="./assets/img/join.png" alt="img-1">
           </div>
         </div>
       </section>
       <!--Main Content-->
       <footer id="footer" class="m-0">
-          <section class="contact">
+          <section id="contact" class="contact">
             <div class="say-hello">
               <form class="form-contact" enctype="text/plain" method="GET" action="mailto:customerservice@larmegroup.com">
                 <div class="margin-top-small head-center">
