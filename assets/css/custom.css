@@ -1,0 +1,348 @@
+
+/*General*/
+ .margin-top-small {
+    margin-top: 15px;
+ }
+
+/*General*/
+
+/*Form Component*/
+
+.contact {
+  background-color: #21252A;
+  padding: 10rem 0;
+  display: flex;
+
+}
+
+@media only screen and (max-width: 900px) {
+  .contact{
+    padding: 6rem 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contact{
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+}
+
+.say-hello {
+  background-color: #21252A;
+  width: 30%;
+}
+
+@media only screen and (max-width: 900px) {
+  .say-hello{
+    order: 1;
+    width: 50%;
+  }
+}
+
+
+.form-contact {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.form-contr {
+  width: 80%;
+}
+
+.form-input {
+  width: 95%;
+  padding: 5px 3px;
+}
+
+
+.form-lab {
+  color: #FFF;
+  font-size: 12.6px;
+  font-family: "Open Sans", Arial, sans-serif;
+  display: block;
+}
+
+.span-required {
+  color: red;
+  font-size: 15px;
+}
+
+.btn-form {
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #3287C3;
+  color: #fff;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 600;
+}
+/*Form Component*/
+
+
+/* Company Section*/
+
+.company-logo {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #21252A;
+  width: 40%;
+
+}
+
+@media only screen and (max-width: 900px) {
+  .company-logo{
+    width: 50%;
+  }
+}
+
+.cn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.company-name {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.company-slogan {
+  text-transform: uppercase;
+  font-size: 20px !important;
+  padding: 5px 0;
+}
+
+/* Company Section*/
+
+/* Address Section */
+
+.office-address {
+  flex: 1;
+
+}
+
+@media only screen and (max-width: 900px) {
+  .office-address{
+    order: 2;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+  }
+}
+
+.office-list {
+  list-style: none;
+}
+
+.item-header {
+  text-transform: uppercase;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.item {
+  color: #777777;
+}
+
+.office {
+
+}
+
+.inquiries {
+
+}
+
+.service {
+
+}
+/* Address Section */
+
+/* about Section */
+
+.about {
+  display: flex;
+  padding: 5rem 0;
+}
+
+.about-paragraph {
+  width: 50%;
+  background-color: #fff;
+}
+
+.about-paragraph p {
+  margin-bottom: 0;
+  line-height: 35px;
+  width: 90%;
+}
+
+.about-items {
+  padding: 20px 40px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-images {
+  width: 50%;
+  text-align: center;
+}
+
+.about-img-container {
+  display: inline-block
+}
+
+.about-head {
+  text-transform: uppercase;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+.secondary-head {
+  text-transform: uppercase;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 24px;
+  color: #2A2A2A;
+  margin-top: 15px;
+}
+
+.about-text {
+  font-size: 18px;
+  color: #777777;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.about-mt-big {
+  margin-top: 20px;
+}
+
+.image-bottom-container {
+  width: 100%;
+  display: flex;
+  display: inline-block
+}
+
+.about-img {
+  padding: 5px;
+  width: 70%;
+  box-shadow: 0 2rem 5rem rgba(0,0,0,0.2);
+}
+
+.about-img-bottom {
+  padding: 5px;
+  width: 35%;
+  box-shadow: 0 2rem 5rem rgba(0,0,0,0.2);
+}
+
+/* about Section */
+
+/* capability secion */
+
+.capability {
+  padding: 5rem 10rem;
+  background-color: black;
+}
+
+.capability p {
+  color: #fff;
+}
+
+.capability h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+}
+
+.our-cap {
+  padding: 30px 0;
+  display: flex;
+}
+
+.inside-cap {
+  padding: 10px 20px;
+  width: 50%;
+}
+
+.cap-img {
+  flex: 1;
+  text-align: center;
+  display: flex;
+}
+
+.img-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cap-img {
+  width: 50%;
+}
+
+.cap-img h6 {
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.cap-img img {
+  width: 65%;
+}
+
+.products {
+  padding: 30px 0;
+  display: flex;
+}
+
+.inside-products {
+  padding: 10px 20px;
+  width: 50%;
+}
+
+.btn-products {
+  width: 50%;
+  position: relative;
+}
+
+.btn-products a {
+  text-transform: uppercase;
+  position: absolute;
+  top: 25%;
+  left: 32%;
+}
+
+.distribution {
+  padding: 30px 0;
+  display: flex;
+}
+
+.inside-distribution {
+  padding: 10px 20px;
+  width: 50%;
+}
+
+.distribution-img {
+  width: 50%;
+  text-align: center;
+}
+
+.distribution-img img {
+  width: 80%;
+}
+
+/* capability secion */
