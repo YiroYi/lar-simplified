@@ -1,17 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>nexter &mdash; your home, your freedom</title>
-    </head>
-    <body class="container">
-        
-    </body>
+<html class="side-header side-header-right side-header-right-no-reverse">
+  <head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Larme Group</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/vendor/fontawesome-free/css/all.min.css">
+
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/theme-elements.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+
+
+    <!-- Current Page CSS -->
+
+
+    <!-- Head Libs -->
+    <script src="./assets/vendor/modernizr/modernizr.min.js"></script>
+
+  </head>
+  <body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 500}">
+    <div class="loading-overlay">
+      <div class="bounce-loader">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="sticky-wrapper sticky-wrapper-transparent sticky-wrapper-effect-1 sticky-wrapper-border-bottom d-none d-lg-block d-xl-none" data-plugin-sticky data-plugin-options="{'minWidth': 0, 'stickyStartEffectAt': 100, 'padding': {'top': 0}}">
+        <div class="sticky-body">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <div class="py-4">
+                  <a href="index.html">
+                    <h1>LARME GROUP</h1>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3 text-right">
+                <button class="hamburguer-btn hamburguer-btn-light hamburguer-btn-sticky-dark" data-set-active="false">
+                  <span class="hamburguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Right menu begin-->
+      <header id="header" class="side-header d-flex z-index-1">
+        <div class="header-body">
+          <div class="header-container container d-flex h-100">
+            <div class="header-column flex-row flex-lg-column justify-content-center h-100">
+              <div class="header-row flex-row justify-content-start justify-content-lg-center py-lg-5">
+                <button class="hamburguer-btn hamburguer-btn-side-header active d-none d-lg-block d-xl-none" data-set-active="false">
+                  <span class="close">
+                    <span></span>
+                    <span></span>
+                  </span>
+                </button>
+                <div class="header-logo">
+                  <a href="i.html">
+                    <h1 style="text-align:center;font-size: 60px;">LARME</h1>
+                    <h1 style="text-align:center;font-size: 60px;">GROUP</h1>
+                  </a>
+                </div>
+              </div>
+              <div class="header-row header-row-side-header flex-row h-100 overflow-hidden pb-lg-5">
+                <div class="header-nav header-nav-links header-nav-links-side-header header-nav-links-vertical header-nav-links-vertical-slide align-self-center">
+                  <div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-4 header-nav-main-sub-effect-1">
+                    <nav class="collapse">
+                      <ul class="nav nav-pills" id="mainNav">
+                        <li >
+                          <a class="" href="#home">
+                            {{trans('file.nvhome')}}
+                          </a>
+                        </li>
+                        <li >
+                          <a class="" href="#about">
+                            {{trans('file.nvabout')}}
+                          </a>
+
+                        </li>
+                        <li class="dropdown">
+                          <a class="dropdown-item dropdown-toggle" href="#">
+                            {{trans('file.nvportfolio')}}
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li class="back-button d-none d-lg-block">
+                              <a class="dropdown-item">
+                                {{trans('file.nvback')}}
+                              </a>
+                            </li>
+                            <li class="">
+                              <a class="" >{{trans('file.nvfurniture')}}</a>
+                            </li>
+                            <li class="">
+                              <a class="" >{{trans('file.nvhomeapp')}}</a>
+                            </li>
+                            <li class="">
+                              <a class="" >{{trans('file.nvclothing')}}</a>
+                            </li>
+                            <li class="">
+                              <a class="" >{{trans('file.nvfashionacc')}}</a>
+                            </li>
+                            <li class="">
+                              <a class="" >{{trans('file.nvbags')}}</a>
+                            </li>
+                            <li class="">
+                              <a class="" >{{trans('file.nvgadgets')}}</a>
+                            </li>
+                            <li class="">
+                              <a class="" >{{trans('file.nvcars')}}</a>
+                            </li>
+                            <li class="">
+                              <a class="" >{{trans('file.nvcons')}}</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li >
+                          <a class="" href="#contact">
+                            {{trans('file.nvcontact')}}
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="header-row justify-content-end pb-lg-3">
+                <ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean d-sm-0">
+                <select id="languageSwitcher"   style="padding: 0px;height: 22px;background-color:transparent; margin-top:4.5px;text-align:center;">
+                   <option value="en" <?php $cuRRlocal = Config::get('app.locale'); echo ($cuRRlocal == 'en' ? "selected" : "") ?>>{{trans('file.nvEn')}}</option>
+                   <option value="zn" <?php $cuRRlocal = Config::get('app.locale'); echo ($cuRRlocal == 'zn' ? "selected" : "") ?>>{{trans('file.nvZn')}}</option>
+                   <option value="es" <?php $cuRRlocal = Config::get('app.locale'); echo ($cuRRlocal == 'es' ? "selected" : "") ?>>{{trans('file.nvEs')}}</option>
+                   <option value="kr" <?php $cuRRlocal = Config::get('app.locale'); echo ($cuRRlocal == 'kr' ? "selected" : "") ?>>{{trans('file.nvKr')}}</option>
+                </select>
+                </ul>
+              </div>
+              <div class="header-row justify-content-end pb-lg-3">
+                <!--<ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean d-sm-0">
+                  <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                  <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                  <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>-->
+                <p class="d-none d-lg-block text-1 pt-3">© 2019 LARME GROUP. All rights reserved</p>
+                <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" name="_token" id="csrf_token" value="{{csrf_token()}}">
+      </header>
+      <!--Main Content-->
+      <div role="main" class="main position-relative z-index-2 z-index-mobile-0">
+        <div class="m-0 p-0">
+          <a id="home"><a/>
+          <div class="row">
+            <div class="col-sm-6 col-lg-4 p-0 m-0">
+              <div class="portfolio-item m-0 p-0">
+                  <span class="thumb-info thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+                    <span class="thumb-info-wrapper">
+                      <img src="./assets/img/index2.jpg" class="img-fluid" alt="">
+                      <span class="thumb-info-title bg-transparent p-4">
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">LARME GROUP</span>
+                        <span class="thumb-info-type opacity-6">{{trans('file.nvvalue')}}</span>
+                      </span>
+                    </span>
+                  </span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 p-0 m-0">
+              <div class="portfolio-item m-0 p-0">
+                  <span class="thumb-info thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+                    <span class="thumb-info-wrapper">
+                      <img src="./assets/img/furniture.jpg" class="img-fluid" alt="">
+                      <span class="thumb-info-title bg-transparent p-4">
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvindfur')}}</span>
+                        <span class="thumb-info-type opacity-6">{{trans('file.nvhomeint')}}</span>
+                        <span class="thumb-info-show-more-content pr-3">
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 p-0 m-0">
+              <div class="portfolio-item m-0 p-0">
+                  <span class="thumb-info thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+                    <span class="thumb-info-wrapper">
+                      <img src="./assets/img/homeAp.jpg" class="img-fluid" alt="">
+                      <span class="thumb-info-title bg-transparent p-4">
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvhomeapl')}}</span>
+                        <span class="thumb-info-type opacity-6">{{trans('file.nvimprove')}}</span>
+                      </span>
+                    </span>
+                  </span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 p-0 m-0">
+              <div class="portfolio-item m-0 p-0">
+                  <span class="thumb-info thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+                    <span class="thumb-info-wrapper">
+                      <img src="./assets/img/clothing2.jpg" class="img-fluid" alt="">
+                      <span class="thumb-info-title bg-transparent p-4">
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvcloth')}}</span>
+                        <span class="thumb-info-type opacity-6">{{trans('file.nvfashfo')}}</span>
+                      </span>
+                    </span>
+                  </span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 p-0 m-0">
+              <div class="portfolio-item m-0 p-0">
+                  <span class="thumb-info thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+                    <span class="thumb-info-wrapper">
+                      <img src="./assets/img/fashionA1.jpg" class="img-fluid" alt="">
+                      <span class="thumb-info-title bg-transparent p-4">
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvfashacc')}}</span>
+                        <span class="thumb-info-type opacity-6">{{trans('file.nvbeyou')}}</span>
+                      </span>
+                    </span>
+                  </span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 p-0 m-0">
+              <div class="portfolio-item m-0 p-0">
+                  <span class="thumb-info thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+                    <span class="thumb-info-wrapper">
+                      <img src="./assets/img/bags1.jpg" class="img-fluid" alt="">
+                      <span class="thumb-info-title bg-transparent p-4">
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvbgs')}}</span>
+                        <span class="thumb-info-type opacity-6">{{trans('file.nvwituev')}}</span>
+                      </span>
+                    </span>
+                  </span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 p-0 m-0">
+              <div class="portfolio-item m-0 p-0">
+                  <span class="thumb-info thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+                    <span class="thumb-info-wrapper">
+                      <img src="./assets/img/gadgets.jpg" class="img-fluid" alt="">
+                      <span class="thumb-info-title bg-transparent p-4">
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvgadtech')}}</span>
+                        <span class="thumb-info-type opacity-6">{{trans('file.nvpartof')}}</span>
+                      </span>
+                    </span>
+                  </span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 p-0 m-0">
+              <div class="portfolio-item m-0 p-0">
+
+                  <span class="thumb-info thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+                    <span class="thumb-info-wrapper">
+                      <img src="./assets/img/spareparts1.jpg" class="img-fluid" alt="">
+                      <span class="thumb-info-title bg-transparent p-4">
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvcarx')}}</span>
+                        <span class="thumb-info-type opacity-6">{{trans('file.nvspare')}}</span>
+                      </span>
+                    </span>
+                  </span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 p-0 m-0">
+              <div class="portfolio-item m-0 p-0">
+                  <span class="thumb-info thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+                    <span class="thumb-info-wrapper">
+                      <img src="./assets/img/building1.jpg" class="img-fluid" alt="">
+                      <span class="thumb-info-title bg-transparent p-4">
+                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{trans('file.nvcontr')}}</span>
+                        <span class="thumb-info-type opacity-6">{{trans('file.nvbuildmat')}}</span>
+                      </span>
+                    </span>
+                  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="about">
+       <div class="about-paragraph">
+        <div class="about-items">
+         <font class="about-head">EXCELLENCE, GOODWILL & PERFORMANCE</font>
+         <font class="secondary-head">as our core values</font>
+         <p class="about-text about-paragraph about-mt-big">LARME GROUP has established itself as a superior manufacturer for different product industries in China, associated with highest standard of quality,sophisticated design and intricate detail & comfort.</p>
+         <font class="about-text about-mt-big"><strong>We trust in:</strong> </font>
+         <font class="about-text about-mt-big">- Find the best solution for your  needs</font>
+         <font class="about-text">- Provide fashionable & trendy designs</font>
+         <font class="about-text">- Provide an smooth & efficient purchase process</font>
+         <font class="about-text about-mt-big">We are the accredited OEM supplier for many brands</font>
+        </div>
+       </div>
+       <div class="about-images">
+        <div class="about-img-container">
+         <div>
+          <img  class="about-img" src="./assets/img/fashionall.jpg" alt="About-1"/>
+         </div>
+         <div class="image-bottom-container">
+           <img class="about-img-bottom" src="./assets/img/furniture3.jpg" alt="About-2"/>
+           <img class="about-img-bottom" src="./assets/img/tools.jpg" alt="About-3"/>
+         </div>
+        </div>
+       </div>
+      </section>
+      <!--Section for Larme introduction finish-->
+        <section class="capability">
+          <div class="our-cap">
+            <div class="inside-cap">
+              <h2>OUR CAPABILITY </h2>
+              <p>LARMER GROUP is composed of a very professional team that includes creative designers, skilled tailors and high-quality fabric suppliers, professionals of many kind of industries.</p>
+              <p>Therefore, it allows us to have a great capability from designing to manufacturing, thus provides a full-service solution to meet your business needs and target different customers.</p>
+            </div>
+            <div class="cap-img">
+              <div class="img-container">
+                <div class="img">
+                  <h6>fashion</h6>
+                  <img src="./assets/img/smallfashion.jpg" alt="img-1">
+                </div>
+                <div class="img">
+                  <h6>technology</h6>
+                  <img src="./assets/img/smallgadgets.jpg" alt="img-1">
+                </div>
+                <div class="img">
+                  <h6>construction</h6>
+                  <img src="./assets/img/smallconstruction.jpg" alt="img-1">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products">
+            <div class="btn-products">
+              <a class="btn-form" href="#">product portfolio</a>
+            </div>
+            <div class="inside-products">
+              <h2>OUR PRODUCTS</h2>
+              <p>We provide a wide variety of solutions for multiple industries commodities to match your business objectives, with a focus on the last market tendencies.</p>
+            </div>
+          </div>
+          <div class="distribution">
+            <div class="inside-distribution">
+              <h2>OUR DISTRIBUTION</h2>
+              <p>Our products are distributed through a carefully selected network of suppliers to ensure our ideal brand positioning</p>
+              <p>We take a pride in our distribution partners for providing excellence in customers satisfaction. </p>
+            </div>
+            <div class="distribution-img">
+              <img src="./assets/img/distribution.jpg" alt="img-1">
+            </div>
+          </div>
+        </section>
+      <!--Section for apparel & distribution-->
+
+      <!--Section for Join US-->
+      <section class="call-to-actionEdit call-to-action-primary m-0">
+        <div class="container">
+          <a id="contact"><a/>
+          <h2 class="wsite-content-title" style="text-align:center;"><strong><font size="6">{{trans('file.nvjoin1')}}</font></strong></h2>
+
+          <div class="paragraph" style="text-align:center;">{{trans('file.nvjoin2')}}&nbsp;</div>
+
+          <div>
+            <div class="wsite-multicol">
+              <div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+                <div class="">
+                  <br></br>
+                </div>
+                 <table class="wsite-multicol-table">
+                     <tbody class="wsite-multicol-tbody">
+                          <tr class="wsite-multicol-tr">
+                                <td class="wsite-multicol-col" style="width:35.609509357613%; padding:0 15px;">
+                                  <div style="text-align:center;">
+                                    <div style="height: 10px; overflow: hidden;"></div>
+                                      <a class="btnEdit btn-primaryEdit btn-rounded px-5 py-3 font-weight-semibold text-color-light mt-3 mb-5" href="mailto:hello@larmegroup.com" >
+                                        <span class="wsite-button-inner">{{trans('file.nvjoin3')}}</span>
+                                      </a>
+                                      <div style="height: 0px; overflow: hidden;"></div>
+                                    </div>
+                                    <br></br>
+                                  <div class="paragraph" style="text-align:center;">{{trans('file.nvjoin4')}}</div>
+                                 </td>
+                                 <td class="wsite-multicol-col" style="width:30.271630034707%; padding:0 15px;">
+                                   <div style="text-align:center;"><div style="height: 10px; overflow: hidden;"></div>
+                                    <a class="btnEdit btn-primaryEdit btn-rounded px-5 py-3 font-weight-semibold text-color-light mt-3 mb-5" href="mailto:hello@larmegroup.com" >
+                                      <span class="wsite-button-inner">{{trans('file.nvjoin5')}}</span>
+                                    </a>
+                                    <div style="height: 0px; overflow: hidden;"></div>
+                                  </div>
+                                  <br></br>
+                                  <div class="paragraph" style="text-align:center;"><span style="line-height: 0; display: none;">&#65279;</span>{{trans('file.nvjoin6')}}<span style="line-height: 0; display: none;">&#65279;</span></div>
+                                 </td>
+                                <td class="wsite-multicol-col" style="width:34.11886060768%; padding:0 15px;">
+                                  <div style="text-align:center;"><div style="height: 10px; overflow: hidden;"></div>
+                                    <a class="btnEdit btn-primaryEdit btn-rounded px-5 py-3 font-weight-semibold text-color-light mt-3 mb-5" href="mailto:hello@larmegroup.com" >
+                                      <span class="wsite-button-inner">{{trans('file.nvjoin7')}}</span>
+                                    </a>
+                                    <div style="height: 0px; overflow: hidden;"></div>
+                                  </div>
+                                  <br></br>
+                                  <div class="paragraph" style="text-align:center;">{{trans('file.nvjoin8')}}</div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div>
+                  </div>
+            </div>
+            <div>
+              <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:15px;margin-left:0;margin-right:0;text-align:center">
+                  <img src="./assets/img/join.png" alt="join" style="width:100%;max-width:1100px" />
+              <div style="display:block;font-size:90%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Main Content-->
+      <footer id="footer" class="m-0">
+          <section class="contact">
+            <div class="say-hello">
+              <form class="form-contact" enctype="text/plain" method="GET" action="mailto:customerservice@larmegroup.com">
+                <div class="margin-top-small head-center">
+                  <h3>Say hello to us</h3>
+                </div>
+                <div class="form-contr">
+                  <label for="email" class="form-lab">Your Email <span class="span-required">*</span></label>
+                  <input id="email" class="form-input" type="email" placeholder="Tell us your email" required>
+                </div>
+                <div class="form-contr margin-top-small">
+                  <label for="text-contact" class="form-lab">Your Message <span class="span-required">*</span></label>
+                  <textarea id="text-contact" class="form-input" type="text" placeholder="Type your message" required></textarea>
+                </div>
+                <button class="btn-form margin-top-small">Submit</button>
+              </form>
+            </div>
+            <div class="company-logo">
+              <div class="cn">
+                <h1 class="company-name">Larme<br>Group</h1>
+              </div>
+              <div style="text-align: center;">
+                <h2 class="company-slogan">Value without<br>sacrificing quality</h2>
+              </div>
+            </div>
+            <div class="office-address">
+              <div class="office">
+                <ul class="office-list">
+                  <li class="item-header">Our office</li>
+                  <li class="item">Radio City,15th Floor, No.505</li>
+                  <li class="item">Hennessy Road,Causeway Bay</li>
+                  <li class="item">Hong Kong</li>
+                </ul>
+              </div>
+              <div class="inquiries">
+                <ul class="office-list">
+                  <li class="item-header">GENERAL INQUIRIES</li>
+                  <li class="item">hello@larmegroup.com</li>
+                  <li class="item-header">CUSTOMER SERVICE</li>
+                  <li class="item">customerservice@larmegroup.com</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        <div class="footer-copyright">
+          <div class="container py-2">
+            <div class="row py-4">
+              <div class="col text-center">
+                <!--<ul class="footer-social-icons social-icons social-icons-clean social-icons-icon-light mb-3">
+                  <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                  <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                  <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>-->
+                <p><strong>LARME GROUP</strong> - © Copyright 2019. All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+    <script src="./assets/vendor/popper/umd/popper.min.js"></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/vendor/common/common.min.js"></script>
+    <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/theme.init.js"></script>
+  </body>
 </html>
