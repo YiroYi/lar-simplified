@@ -2,39 +2,25 @@
 <html lang="en">
 <html class="side-header side-header-right side-header-right-no-reverse">
   <head>
-
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>Larme Group</title>
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
-
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-
     <!-- Web Fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.css">
     <link rel="stylesheet" href="./assets/css/theme-elements.css">
     <link rel="stylesheet" href="./assets/css/custom.css">
-
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/vendor/fontawesome-free/css/all.min.css">
-
-
-
-
-    <!-- Current Page CSS -->
-
-
     <!-- Head Libs -->
     <script src="./assets/vendor/modernizr/modernizr.min.js"></script>
-
   </head>
   <body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 500}">
     <div class="loading-overlay">
@@ -83,7 +69,7 @@
                   </span>
                 </button>
                 <div class="header-logo">
-                  <a href="#" class="nav-letter">
+                  <a class="nav-letter">
                     <h1 style="text-align:center;font-size: 60px;">LARME</h1>
                     <h1 style="text-align:center;font-size: 60px;">GROUP</h1>
                   </a>
@@ -95,53 +81,48 @@
                     <nav class="collapse">
                       <ul class="nav nav-pills" id="mainNav">
                         <li >
-                          <a class="" href="#about">
-                            HOME
-                          </a>
-                        </li>
-                        <li >
-                          <a class="" href="#about">
+                          <a id="nvabout" class="" href="#about">
                             ABOUT US
                           </a>
                         </li>
                         <li class="dropdown">
-                          <a class="dropdown-item dropdown-toggle" href="#">
+                          <a id="nvportfolio" class="dropdown-item dropdown-toggle" href="#">
                             PORTFOLIO
                           </a>
                           <ul class="dropdown-menu">
                             <li class="back-button d-none d-lg-block">
-                              <a class="dropdown-item">
+                              <a id="nvback" class="dropdown-item">
                                 Back
                               </a>
                             </li>
                             <li class="">
-                              <a class="" >Furniture</a>
+                              <a id="nvfurniture" class="" >Furniture</a>
                             </li>
                             <li class="">
-                              <a class="" >Home Appliances</a>
+                              <a id="nvhomeapp" class="" >Home Appliances</a>
                             </li>
                             <li class="">
-                              <a class="" >Clothing</a>
+                              <a id="nvclothing" class="" >Clothing</a>
                             </li>
                             <li class="">
-                              <a class="" >Fashion Accesories</a>
+                              <a id="nvfashionacc" class="" >Fashion Accesories</a>
                             </li>
                             <li class="">
-                              <a class="" >Bags</a>
+                              <a id="nvbags" class="" >Bags</a>
                             </li>
                             <li class="">
-                              <a class="" >Gadgets & Technology</a>
+                              <a id="nvgadgets" class="" >Gadgets & Technology</a>
                             </li>
                             <li class="">
-                              <a class="" >Cars</a>
+                              <a id="nvcars" class="" >Cars</a>
                             </li>
                             <li class="">
-                              <a class="" >Construction</a>
+                              <a id="nvcons" class="" >Construction</a>
                             </li>
                           </ul>
                         </li>
                         <li >
-                          <a class="" href="#contact">
+                          <a id="nvcontact" class="" href="#contact">
                             CONTACT
                           </a>
                         </li>
@@ -152,11 +133,12 @@
               </div>
               <div class="header-row justify-content-end pb-lg-3">
                 <ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean d-sm-0">
-                <select id="languageSwitcher"   style="padding: 0px;height: 22px;background-color:transparent; margin-top:4.5px;text-align:center;">
-                   <option value="en" <?php $cuRRlocal = Config::get('app.locale'); echo ($cuRRlocal == 'en' ? "selected" : "") ?>>{{trans('file.nvEn')}}</option>
-                   <option value="zn" <?php $cuRRlocal = Config::get('app.locale'); echo ($cuRRlocal == 'zn' ? "selected" : "") ?>>{{trans('file.nvZn')}}</option>
-                   <option value="es" <?php $cuRRlocal = Config::get('app.locale'); echo ($cuRRlocal == 'es' ? "selected" : "") ?>>{{trans('file.nvEs')}}</option>
-                   <option value="kr" <?php $cuRRlocal = Config::get('app.locale'); echo ($cuRRlocal == 'kr' ? "selected" : "") ?>>{{trans('file.nvKr')}}</option>
+                <select name="language-switch" id="language-switch"  style="padding: 0px;height: 22px;background-color:transparent; margin-top:4.5px;text-align:center;">
+                   <option id="nvLa" value="la">Language</option>
+                   <option id="nvEn" value="#eng">English</option>
+                   <option id="nvZn" value="#zh">Chinese</option>
+                   <option id="nvEs" value="#es">Spanish</option>
+                   <option id="nvKr" value="#kr">Korean</option>
                 </select>
                 </ul>
               </div>
@@ -169,7 +151,6 @@
             </div>
           </div>
         </div>
-        <input type="hidden" name="_token" id="csrf_token" value="{{csrf_token()}}">
       </header>
       <!--Main Content-->
       <div role="main" class="main position-relative z-index-2 z-index-mobile-0">
@@ -183,7 +164,7 @@
                       <img src="./assets/img/index2.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
                         <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">LARME GROUP</span>
-                        <span class="thumb-info-type opacity-6">VALUE WITHOUT SACRIFICING QUALITY</span>
+                        <span id="nvvalue" class="thumb-info-type opacity-6">VALUE WITHOUT SACRIFICING QUALITY</span>
                       </span>
                     </span>
                   </span>
@@ -195,8 +176,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/furniture.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">FASHION ACCESORIES</span>
-                        <span class="thumb-info-type opacity-6">BE YOURSELF</span>
+                        <span id="nvindfur" class="thumb-info-inner line-height-1 text-4 font-weight-bold">FURNITURE</span>
+                        <span id="nvhomeint" class="thumb-info-type opacity-6">HOME & INTERIORS</span>
                         <span class="thumb-info-show-more-content pr-3">
                         </span>
                       </span>
@@ -210,8 +191,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/homeAp.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">BAGS</span>
-                        <span class="thumb-info-type opacity-6">WITH YOU TO EVERYWHERE</span>
+                        <span id="nvhomeapl" class="thumb-info-inner line-height-1 text-4 font-weight-bold">HOME APPLIANCES</span>
+                        <span id="nvimprove" class="thumb-info-type opacity-6">IMPROVE YOUR LIFE QUALITY</span>
                       </span>
                     </span>
                   </span>
@@ -223,8 +204,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/clothing2.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">CLOTHING</span>
-                        <span class="thumb-info-type opacity-6">FASHION FOR EVERYONE</span>
+                        <span id="nvcloth" class="thumb-info-inner line-height-1 text-4 font-weight-bold">CLOTHING</span>
+                        <span id="nvfashfo" class="thumb-info-type opacity-6">FASHION FOR EVERYONE</span>
                       </span>
                     </span>
                   </span>
@@ -236,8 +217,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/fashionA1.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">FASHION ACCESORIES</span>
-                        <span class="thumb-info-type opacity-6">BE YOURSELF</span>
+                        <span id="nvfashacc" class="thumb-info-inner line-height-1 text-4 font-weight-bold">FASHION ACCESORIES</span>
+                        <span id="nvbeyou" class="thumb-info-type opacity-6">BE YOURSELF</span>
                       </span>
                     </span>
                   </span>
@@ -249,8 +230,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/bags1.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">BAGS</span>
-                        <span class="thumb-info-type opacity-6">WITH YOU TO EVERYWHERE</span>
+                        <span id="nvbgs" class="thumb-info-inner line-height-1 text-4 font-weight-bold">BAGS</span>
+                        <span id="nvwituev" class="thumb-info-type opacity-6">WITH YOU TO EVERYWHERE</span>
                       </span>
                     </span>
                   </span>
@@ -262,8 +243,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/gadgets.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">GADGETS & TECHNOLOGY</span>
-                        <span class="thumb-info-type opacity-6">PART OF YOU</span>
+                        <span id="nvgadtech" class="thumb-info-inner line-height-1 text-4 font-weight-bold">GADGETS & TECHNOLOGY</span>
+                        <span id="nvpartof" class="thumb-info-type opacity-6">PART OF YOU</span>
                       </span>
                     </span>
                   </span>
@@ -276,8 +257,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/spareparts1.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">CARS</span>
-                        <span class="thumb-info-type opacity-6">SPARE PARTS & ACCESORIES</span>
+                        <span id="nvcarx" class="thumb-info-inner line-height-1 text-4 font-weight-bold">CARS</span>
+                        <span id="nvspare" class="thumb-info-type opacity-6">SPARE PARTS & ACCESORIES</span>
                       </span>
                     </span>
                   </span>
@@ -289,8 +270,8 @@
                     <span class="thumb-info-wrapper">
                       <img src="./assets/img/building1.jpg" class="img-fluid" alt="">
                       <span class="thumb-info-title bg-transparent p-4">
-                        <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">CONSTRUCTION</span>
-                        <span class="thumb-info-type opacity-6">BUILDING MATERIALS
+                        <span id="nvcontr" class="thumb-info-inner line-height-1 text-4 font-weight-bold">CONSTRUCTION</span>
+                        <span id="nvbuildmat" class="thumb-info-type opacity-6">BUILDING MATERIALS
 </span>
                       </span>
                     </span>
@@ -303,14 +284,14 @@
       <section id="about" class="about">
        <div class="about-paragraph">
         <div class="about-items">
-         <font class="about-head">EXCELLENCE, GOODWILL & PERFORMANCE</font>
-         <font class="secondary-head">as our core values</font>
-         <p class="about-text about-paragraph about-mt-big">LARME GROUP has established itself as a superior manufacturer for different product industries in China, associated with highest standard of quality,sophisticated design and intricate detail & comfort.</p>
-         <font class="about-text about-mt-big"><strong>We trust in:</strong> </font>
-         <font class="about-text about-mt-big">- Find the best solution for your  needs</font>
-         <font class="about-text">- Provide fashionable & trendy designs</font>
-         <font class="about-text">- Provide an smooth & efficient purchase process</font>
-         <font class="about-text about-mt-big">We are the accredited OEM supplier for many brands</font>
+         <font id="nvex1" class="about-head">EXCELLENCE, GOODWILL & PERFORMANCE</font>
+         <font id="nvex2" class="secondary-head">as our core values</font>
+         <p id="nvex3" class="about-text about-paragraph about-mt-big">LARME GROUP has established itself as a superior manufacturer for different product industries in China, associated with highest standard of quality,sophisticated design and intricate detail & comfort.</p>
+         <font id="nvex4" class="about-text about-mt-big"><strong>We trust in:</strong> </font>
+         <font id="nvex5" class="about-text about-mt-big">- Find the best solution for your  needs</font>
+         <font id="nvex7" class="about-text">- Provide fashionable & trendy designs</font>
+         <font id="nvex8" class="about-text">- Provide an smooth & efficient purchase process</font>
+         <font id="nvex9" class="about-text about-mt-big">We are the accredited OEM supplier for many brands</font>
         </div>
        </div>
        <div class="about-images">
@@ -329,22 +310,22 @@
         <section class="capability">
           <div class="our-cap">
             <div class="inside-cap">
-              <h2>OUR CAPABILITY </h2>
-              <p>LARMER GROUP is composed of a very professional team that includes creative designers, skilled tailors and high-quality fabric suppliers, professionals of many kind of industries.</p>
-              <p>Therefore, it allows us to have a great capability from designing to manufacturing, thus provides a full-service solution to meet your business needs and target different customers.</p>
+              <h2 id="nvcap1" >OUR CAPABILITY </h2>
+              <p id="nvcap2">LARMER GROUP is composed of a very professional team that includes creative designers, skilled tailors and high-quality fabric suppliers, professionals of many kind of industries.</p>
+              <p id="nvcap3">Therefore, it allows us to have a great capability from designing to manufacturing, thus provides a full-service solution to meet your business needs and target different customers.</p>
             </div>
             <div class="cap-img">
               <div class="img-container">
                 <div class="img">
-                  <h6>fashion</h6>
+                  <h6 id="nvcap4">fashion</h6>
                   <img src="./assets/img/smallfashion.jpg" alt="img-1">
                 </div>
                 <div class="img">
-                  <h6>technology</h6>
+                  <h6 id="nvcap5">technology</h6>
                   <img src="./assets/img/smallgadgets.jpg" alt="img-1">
                 </div>
                 <div class="img">
-                  <h6>construction</h6>
+                  <h6 id="nvcap6">construction</h6>
                   <img src="./assets/img/smallconstruction.jpg" alt="img-1">
                 </div>
               </div>
@@ -352,18 +333,18 @@
           </div>
           <div class="products">
             <div class="btn-products">
-              <a class="btn-form" href="#lar_index">product portfolio</a>
+              <a id="nvcap7" class="btn-form" href="#lar_index">product portfolio</a>
             </div>
             <div class="inside-products">
-              <h2>OUR PRODUCTS</h2>
-              <p>We provide a wide variety of solutions for multiple industries commodities to match your business objectives, with a focus on the last market tendencies.</p>
+              <h2 id="nvcap8">OUR PRODUCTS</h2>
+              <p id="nvcap9">We provide a wide variety of solutions for multiple industries commodities to match your business objectives, with a focus on the last market tendencies.</p>
             </div>
           </div>
           <div class="distribution">
             <div class="inside-distribution">
-              <h2>OUR DISTRIBUTION</h2>
-              <p>Our products are distributed through a carefully selected network of suppliers to ensure our ideal brand positioning</p>
-              <p>We take a pride in our distribution partners for providing excellence in customers satisfaction. </p>
+              <h2 id="nvcap10">OUR DISTRIBUTION</h2>
+              <p id="nvcap11">Our products are distributed through a carefully selected network of suppliers to ensure our ideal brand positioning</p>
+              <p id="nvcap12">We take a pride in our distribution partners for providing excellence in customers satisfaction. </p>
             </div>
             <div class="distribution-img">
               <img src="./assets/img/distribution.jpg" alt="img-1">
@@ -377,21 +358,21 @@
         <div class="join-container">
           <div class="join-up">
             <div class="join-header">
-              <h2>JOIN OUR GLOBAL NETWORK</h2>
-              <p>CLICK THE CERTAIN BOX BELOW TO TELL US WHO YOU ARE </p>
+              <h2 id="nvjoin1">JOIN OUR GLOBAL NETWORK</h2>
+              <p id="nvjoin2">CLICK THE CERTAIN BOX BELOW TO TELL US WHO YOU ARE </p>
             </div>
             <div class="join-btns-cards margin-top-mid">
               <figure class="join-card">
-                <a class="btn-form" href="mailto:hello@larmegroup.com">Designer</a>
-                <p class="margin-top-mid">To be our designers to create great value for our worldwide clients</p>
+                <a id="nvjoin3" class="btn-form" href="mailto:hello@larmegroup.com" target="_blank">Designer</a>
+                <p id="nvjoin4" class="margin-top-mid">To be our designers to create great value for our worldwide clients</p>
               </figure>
               <figure class="join-card">
-                <a class="btn-form" href="mailto:hello@larmegroup.com">Supplier</a>
-                <p class="margin-top-mid">To be our qualified suppliers to provide excellent "weapon"</p>
+                <a id="nvjoin5" class="btn-form" href="mailto:hello@larmegroup.com" target="_blank">Supplier</a>
+                <p id="nvjoin6" class="margin-top-mid">To be our qualified suppliers to provide excellent "weapon"</p>
               </figure>
               <figure class="join-card" style="margin-right: 28px;">
-                <a class="btn-form" href="mailto:hello@larmegroup.com">Distributor</a>
-                <p class="margin-top-mid">To be our distributors to co-build our brand globally</p>
+                <a id="nvjoin7" class="btn-form" href="mailto:hello@larmegroup.com" target="_blank">Distributor</a>
+                <p id="nvjoin8" class="margin-top-mid">To be our distributors to co-build our brand globally</p>
               </figure>
             </div>
           </div>
@@ -404,19 +385,19 @@
       <footer id="footer" class="m-0">
           <section id="contact" class="contact">
             <div class="say-hello">
-              <form class="form-contact" enctype="text/plain" method="GET" action="mailto:customerservice@larmegroup.com">
+              <form class="form-contact" target="_blank" enctype="text/plain" method="GET" action="mailto:customerservice@larmegroup.com">
                 <div class="margin-top-small head-center">
-                  <h3>Say hello to us</h3>
+                  <h3 id="nvfoot1">Say hello to us</h3>
                 </div>
                 <div class="form-contr">
-                  <label for="email" class="form-lab">Your Email <span class="span-required">*</span></label>
+                  <label id="nvfoot2" for="email" class="form-lab">Your Email <span class="span-required">*</span></label>
                   <input id="email" class="form-input" type="email" placeholder="Tell us your email" required>
                 </div>
                 <div class="form-contr margin-top-small">
-                  <label for="text-contact" class="form-lab">Your Message <span class="span-required">*</span></label>
+                  <label id="nvfoot3" for="text-contact" class="form-lab">Your Message <span class="span-required">*</span></label>
                   <textarea id="text-contact" class="form-input" type="text" placeholder="Type your message" required></textarea>
                 </div>
-                <button class="btn-form margin-top-small">Submit</button>
+                <button id="nvfoot4" class="btn-form margin-top-small">Submit</button>
               </form>
             </div>
             <div class="company-logo">
@@ -424,23 +405,24 @@
                 <h1 class="company-name">Larme<br>Group</h1>
               </div>
               <div style="text-align: center;">
-                <h2 class="company-slogan">Value without<br>sacrificing quality</h2>
+                <h2 id="nvfoot5" class="company-slogan">Value without</h2>
+                <h2 id="nvfoot6" class="company-slogan">sacrificing quality</h2>
               </div>
             </div>
             <div class="office-address">
               <div class="office">
                 <ul class="office-list">
-                  <li class="item-header">Our office</li>
-                  <li class="item">Radio City,15th Floor, No.505</li>
-                  <li class="item">Hennessy Road,Causeway Bay</li>
-                  <li class="item">Hong Kong</li>
+                  <li id="nvfoot7" class="item-header">Our office</li>
+                  <li id="nvfoot8" class="item">Radio City,15th Floor, No.505</li>
+                  <li id="nvfoot9" class="item">Hennessy Road,Causeway Bay</li>
+                  <li id="nvfoot10" class="item">Hong Kong</li>
                 </ul>
               </div>
               <div class="inquiries">
                 <ul class="office-list">
-                  <li class="item-header">GENERAL INQUIRIES</li>
+                  <li id="nvfoot11" class="item-header">GENERAL INQUIRIES</li>
                   <li class="item">hello@larmegroup.com</li>
-                  <li class="item-header">CUSTOMER SERVICE</li>
+                  <li id="nvfoot12" class="item-header">CUSTOMER SERVICE</li>
                   <li class="item">customerservice@larmegroup.com</li>
                 </ul>
               </div>
@@ -470,5 +452,6 @@
     <script src="./assets/js/theme.js"></script>
     <script src="./assets/js/custom.js"></script>
     <script src="./assets/js/theme.init.js"></script>
+    <script src="./assets/js/language.js"></script>
   </body>
 </html>
